@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'modra':'#283371',
-        'zuta':'#E3AD26',
-
+        'blue':'#283371',
+        'yellow':'#E3AD26',
+        'white':'#F1F1F1',
+        'orange':'#fa8714',
       },
       fontFamily:{
         inter: ['Inter', 'sans-serif'],

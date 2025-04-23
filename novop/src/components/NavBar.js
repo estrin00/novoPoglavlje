@@ -1,21 +1,23 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom"; // Koristi Link za navigaciju
+import { Link, useLocation } from "react-router-dom"; 
+import logo from "../assets/logonp.jpg";
 
 const NavBar = () => {
-  const location = useLocation(); // Dohvaća trenutnu lokaciju
+  const location = useLocation(); 
 
   const navLinkClass = (path) =>
-    `text-zuta hover:text-indigo font-bold px-4 py-2 rounded-lg ${
-      location.pathname === path ? "border-b-2 border-zuta" : ""
+    `text-yellow hover:text-orange font-bold px-4 py-2 rounded-lg ${
+      location.pathname === path ? "border-b-2 border-yellow" : ""
     }`;
 
   return (
-    <nav className="flex justify-between items-center bg-modra text-zuta p-6">
-      {/* Logo u lijevom kutu */}
-      <div className="text-left font-bold text-2xl">Logo </div>
+    <nav className="flex justify-between items-center bg-blue text-yellow h-24 p-6">
+     
+      <div className="h-full flex items-center">
+        <img src={logo} alt="Logo" className="h-24 w-auto" />
+      </div>
 
-      {/* Gumbi u desnom kutu */}
-      <div className="flex space-x-6 text-zuta">
+      <div className="flex space-x-6 text-yellow">
         <Link to="/" className={navLinkClass("/")}>
           NASLOVNICA
         </Link>
