@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom"; 
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logonp.jpg";
 
 const NavBar = () => {
-  const location = useLocation(); 
+  const location = useLocation();
 
   const navLinkClass = (path) =>
     `text-yellow hover:text-orange font-bold px-4 py-2 rounded-lg ${
@@ -11,13 +11,14 @@ const NavBar = () => {
     }`;
 
   return (
-    <nav className="flex justify-between items-center bg-blue text-yellow h-24 p-6">
-     
-      <div className="h-full flex items-center">
-        <img src={logo} alt="Logo" className="h-24 w-auto" />
+    <nav className="flex flex-col md:flex-row justify-between items-center bg-blue text-yellow h-auto md:h-24 p-4 md:p-6 space-y-4 md:space-y-0">
+      {/* Logo */}
+      <div className="h-20 flex items-center">
+        <img src={logo} alt="Logo" className="h-full w-auto" />
       </div>
 
-      <div className="flex space-x-6 text-yellow">
+      {/* Navigacija */}
+      <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-yellow">
         <Link to="/" className={navLinkClass("/")}>
           NASLOVNICA
         </Link>
