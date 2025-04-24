@@ -6,7 +6,7 @@ const NavBar = () => {
   const location = useLocation();
 
   const navLinkClass = (path) =>
-    `text-yellow hover:text-orange font-bold px-4 py-2 rounded-lg ${
+    `text-yellow hover:text-white font-bold px-4 py-2 rounded-lg ${
       location.pathname === path ? "border-b-2 border-yellow" : ""
     }`;
 
