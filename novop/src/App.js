@@ -11,28 +11,29 @@ import './index.css';
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col min-h-screen">
       <Router>
         <NavBar />
+        <main className="flex-grow flex flex-col justify-between min-h-[calc(100vh-80px)]">
+          <div>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <HeroSection />
+                    <Home />
+                  </>
+                }
+              />
+              <Route path="/about" element={<About />} />
+              <Route path="/program" element={<Program />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
 
-        <main className="flex-grow">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <HeroSection />
-                  <Home />
-                </>
-              }
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/program" element={<Program />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <Footer />
         </main>
-
-        <Footer />
       </Router>
     </div>
   );

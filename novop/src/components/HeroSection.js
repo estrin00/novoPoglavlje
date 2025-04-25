@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] bg-center bg-cover"
+      className="relative w-full h-screen bg-center bg-cover"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-55"></div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
           to="/program"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="bg-orange hover:bg-yellow text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold rounded transition-all duration-500 inline-block"
+          className="bg-yellow hover:bg-blue text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold rounded transition-all duration-500 inline-block"
         >
           <span className="inline-block transition-all duration-500">
             NAŠ PROGRAM
