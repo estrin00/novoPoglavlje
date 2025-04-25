@@ -151,11 +151,11 @@ const Program = () => {
 
   return (
     <div
-      className="bg-cover bg-center bg-fixed py-16 px-4 sm:px-6 lg:px-12 text-white"
+      className="bg-cover bg-center bg-fixed bg-opacity-55 py-16 px-4 sm:px-6 lg:px-12 text-yellow"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="bg-black bg-opacity-70 p-6 rounded-lg">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-yellow-400">
+      <div className="bg-blue bg-opacity-70 p-6 rounded-lg">
+        <h2 className="text-3xl sm:text-4xl font-bold font-inter text-center mb-12 text-yellow-400">
           FOR – I LITI, I ZIMI
         </h2>
 
@@ -181,7 +181,7 @@ const Program = () => {
                     {isOpen ? <FiChevronUp /> : <FiChevronDown />}
                   </div>
                 </div>
-                <p className="italic text-sm text-gray-700 mb-2 mt-1">
+                <p className="italic text-sm text-yellow font-inter mb-2 mt-1">
                   {section.subtitle}
                 </p>
 
@@ -190,7 +190,7 @@ const Program = () => {
                     isOpen ? "max-h-[2000px] mt-3" : "max-h-0"
                   }`}
                 >
-                  <ul className="list-disc list-inside text-sm space-y-2 text-gray-800">
+                  <ul className="list-disc list-inside text-sm space-y-2 text-blue font-inter">
                     {section.bullets.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
@@ -201,7 +201,7 @@ const Program = () => {
           })}
         </div>
 
-        <p className="text-center text-yellow-300 mt-12 text-xl sm:text-2xl italic">
+        <p className="text-center text-yellow-300 font-bold font-inter mt-12 text-xl sm:text-2xl">
           ...jer BRAVURA JE ŽIVIT OD LAVURA
         </p>
       </div>
