@@ -161,7 +161,7 @@ const Program = () => {
 
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {programData.map((section, index) => {
-            const isOpen = openSections.includes(index);
+            const isOpen = isMobile || openSections.includes(index); // Adjust this logic for mobile
             return (
               <div
                 key={index}
@@ -171,7 +171,7 @@ const Program = () => {
               >
                 <div
                   className="flex items-center justify-between cursor-pointer"
-                  onClick={() => toggleSection(index)}
+                  onClick={() => !isMobile && toggleSection(index)} // Disable toggle on mobile
                 >
                   <div className="flex items-center gap-3 text-blue text-xl font-bold">
                     <span className="text-yellow text-2xl">{icons[index]}</span>

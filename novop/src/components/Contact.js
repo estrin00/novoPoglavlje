@@ -13,23 +13,21 @@ const Contact = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-x-8 sm:space-y-0">
-          {/* Email Section */}
           <a
             href="mailto:novopoglavljehvar@gmail.com"
             className="flex items-center space-x-2 text-white hover:text-yellow-400 transition duration-300 w-full sm:w-auto justify-center"
           >
-            <FaEnvelope size={30} />
+            <FaEnvelope className="text-3xl sm:text-4xl" />
             <span className="text-lg">novopoglavljehvar@gmail.com</span>
           </a>
 
-          {/* Facebook Section */}
           <a
             href="https://www.facebook.com/novopoglavlje"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-white hover:text-yellow-400 transition duration-300 w-full sm:w-auto justify-center"
           >
-            <FaFacebook size={30} />
+            <FaFacebook className="text-3xl sm:text-4xl" />
             <span className="text-lg">Pratite nas na Facebooku</span>
           </a>
         </div>
