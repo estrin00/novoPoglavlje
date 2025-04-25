@@ -14,26 +14,23 @@ const App = () => {
     <div className="flex flex-col min-h-screen">
       <Router>
         <NavBar />
-        <main className="flex-grow flex flex-col justify-between min-h-[calc(100vh-80px)]">
-          <div>
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <HeroSection />
-                    <Home />
-                  </>
-                }
-              />
-              <Route path="/about" element={<About />} />
-              <Route path="/program" element={<Program />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-
-          <Footer />
+        <main className="flex-grow flex flex-col">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
+                  <Home />
+                </>
+              }
+            />
+            <Route path="/about" element={<About />} />
+            <Route path="/program" element={<Program />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </main>
+        <Footer />
       </Router>
     </div>
   );
