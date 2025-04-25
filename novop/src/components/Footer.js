@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import logo from "../assets/logonp.jpg"; 
 const Footer = () => {
   return (
@@ -19,7 +20,10 @@ const Footer = () => {
       </div>
 
       <div className="w-full sm:w-1/3 flex justify-center sm:justify-end">
+      <Link to="/">
         <img src={logo} alt="Logo" className="h-24 w-auto" />
+      </Link>
+        
       </div>
     </footer>
   );
