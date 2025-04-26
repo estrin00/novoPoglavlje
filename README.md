@@ -1,2 +1,2 @@
 # novoPoglavlje
-web stranica za udrugu d.f.
+https://www.novopoglavljehvar.com/
