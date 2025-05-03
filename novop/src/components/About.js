@@ -3,28 +3,34 @@ import heroImage from "../assets/hv.jpg";
 
 const About = () => {
   return (
-    <div className="relative w-full bg-cover bg-center bg-fixed text-white py-20 px-4 sm:px-6 lg:px-12 mb-auto"
+    <div className="relative w-full bg-cover bg-center text-yellow py-20 px-4 sm:px-6 lg:px-12 mb-auto"
          style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-65 z-0"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 drop-shadow">
-          Naša politička stranka okuplja ljude koji vjeruju u bolje sutra za naš
-          grad. Kroz dijalog, konkretne promjene i odlučne korake, mi ćemo
-          raditi na stvaranju ravnoteže i pravednosti za sve građane Hvara.
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 drop-shadow font-extrabold">
+        Drage sugrađanke i dragi sugrađani, <br/>
         </p>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl drop-shadow space-y-4">
-          NOVO POGLAVLJE je građanska inicijativa koja okuplja ljude s vizijom Hvara kao grada po mjeri čovjeka. Okupljamo pojedince iz različitih područja života, ali sa zajedničkim ciljem: stvoriti bolju, pravedniju i skladniju budućnost za naš otok.
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl drop-shadow space-y-4 font-semibold">
+        Obraćamo vam se s odgovornošću i entuzijazmom, motivirani nužnošću promjene načina upravljanja našim Hvarom.
+        <br/>¸<br/>
+        Mi smo nezavisna lista okupljena oko ostvarive vizije boljeg, uređenijeg, pravednijeg i vitalnijeg Hvara. Naš cilj, uz vašu potporu, jest otvoriti novo poglavlje za naš Hvar – poglavlje u kojem glas svakoga od vas ima vrijednost, a zajednički interes konačno postaje prioritet.
+
+        Novo poglavlje Hvara predstavlja promjenu načina upravljanja gradom, u kojem oni koji rade, stvaraju i doprinose imaju odlučujuću ulogu, a oni o kojima se moramo brinuti nisu odbačeni ni zanemareni.
+        <br/><br/>
+          Izbori koji slijede i situacija u kojoj se nalazimo pred sve građanke i građane Hvara postavljaju zahtjev za drukčijim promišljanjem od dosadašnjeg o tome kome dati povjerenje u naredne četiri godine.
           <br /><br />
-          Hvar je grad nevjerojatne ljepote, bogate povijesti i iznimnog potencijala. No, znamo da potencijal nije dovoljan – potrebna je odgovornost.
+          Pred nama je vrijeme u kojem će se donositi odluke od sudbonosnog značaja i koje će definirati budućnost Hvara. Paralelno je potrebno rješavati akutne infrastrukturne probleme nastale višedesetljetnim zanemarivanjem, na što nas je brutalno podsjetio nedavni incident u Križnoj luci.
           <br /><br />
-          Želimo grad koji njeguje održiv i odgovoran turizam, onaj koji poštuje lokalnu zajednicu, naš mir, kulturu i ritam života. Turizam koji obogaćuje, a ne narušava.
+          Svjesni velikih izazova koji slijede, smatramo da simbioza različitih životnih i poslovnih iskustava kandidata na našoj listi nama daje širu perspektivu, a vama garantira puno kvalitetnija i razumnija rješenja od dosadašnjih.
           <br /><br />
-          Zalažemo se za transparentno upravljanje, za poticanje mladih, za očuvanje naše prirode, i za gradske odluke koje se donose u dijalogu s građanima. Vjerujemo u Hvar u kojem nema mjesta neredu, nego slozi i zajedničkom napretku.
+          Hvala vam što nas već sada podupirete, slušate i pratite. Pred nama je vrijeme razgovora, susreta i konkretnih prijedloga – a sve s jednim ciljem: Hvar koji je zdrav, uređen, vitalan, zabavan, zanimljiv, lijep i poželjan.          <br /><br />
+          S poštovanjem i vjerom u zajedništvo,
+          Vaša nezavisna lista – Novo Poglavlje
           <br /><br />
-          Novo poglavlje znači otvoriti novu stranicu – onu u kojoj se svi osjećamo kao dio priče. Jer Hvar to zaslužuje. A zajedno to možemo.
         </p>
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 drop-shadow font-extrabold">           For – i liti, i zimi!        </p>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="bg-blue text-yellow px-6 py-10 flex flex-col sm:flex-row justify-between items-center sm:items-start">
       
       <div className="w-full sm:w-1/3 mb-6 sm:mb-0 text-center sm:text-left">
-        <h3 className="font-inter text-white">FOR – I LITI, I ZIMI</h3>
-        <p>… jer BRAVURA JE ŽIVIT OD LAVURA </p>
+        <h3 className="font-inter text-yellow font-semibold ">FOR – I LITI, I ZIMI!</h3>
+        <p>VIJEĆE ODLUČUJE. </p>
       </div>
 
       <div className="w-full sm:w-1/3 mb-6 sm:mb-0 text-center">
@@ -19,9 +19,9 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="w-full sm:w-1/3 flex justify-center sm:justify-end">
+      <div className="w-full sm:w-1/3 flex justify-center sm:justify-end  pt-4 sm:pt-0">
       <Link to="/">
-        <img src={logo} alt="Logo" className="h-24 w-auto" />
+      <img src={logo} alt="Logo" className="h-28 md:h-32 w-auto" />
       </Link>
         
       </div>

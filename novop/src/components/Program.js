@@ -28,8 +28,10 @@ const programData = [
     bullets: [
       "Opća i specijalizirana zdravstvena usluga za građane, u koordinaciji i uz dodatno financiranje iz proračuna Grada u suradnji sa zdravstvenim ustanovama",
       "Osiguranje i financiranje smještaja od strane Grada za liječnike specijaliste i ostalo medicinsko osoblje",
-      "Subvencioniranje specijalizacije liječnika",
-      "Nabava brzog broda za hitne slučajeve prijevoza do zdravstvenih ustanova",
+      "Subvencioniranje specijalizacije liječnika, s naglaskom na: oftamologe, ginekologe, radiologe",
+      "Subvencioniranje školovanja za medicinske sestre/tehničare, laborante, inženjere biokemije, fizioterapeute",
+      "Subvencioniranje dodatnog osoblja : medicinske sestre / tehničari uz postojeći Tim 1 u službi hitne medicinske pomoći tijekom ljetnih mjeseci",
+      "Osiguranje brzog broda za hitne slučajeve prijevoza do zdravstvenih ustanova",
       "Posebna briga i uvođenje novih programa za osobe s invaliditetom, djecom s poteškoćama u razvoju, braniteljima te osobama treće životne dobi",
     ],
   },
@@ -37,16 +39,21 @@ const programData = [
     title: "2. UREĐEN",
     subtitle: "… jer je sređena sredina pitanje budućnosti cijele zajednice",
     bullets: [
+      "Značajno povećanje ulaganja u obnovu zastarjele i neodržavane gradske infrastrukture (Pjaca, ulice, ceste, parkinzi, kanalizacija i odvodnja)",
       "Uvođenje komunalnog reda 24/7",
-      "Urbanistička reforma",
-      "Izmjena prostornog plana radi olakšavanja uvjeta za građenje",
-      "Ukidanje restriktivnih UPU-a Pais i DPU-a Ograde",
-      "Planiranje ostvarive pozicije za benzinsku postaju",
-      "Planiranje pozicija za trgovačke centre",
-      "Proširenje i planiranje novih gospodarsko-servisnih zona",
+      {
+        text: "Urbanistička reforma",
+        subbullets: [
+          "Izmjena prostornog plana radi olakšavanja uvjeta za građenje",
+          "Ukidanje restriktivnih UPU-a Pais i DPU-a Ograde",
+          "Planiranje ostvarive pozicije za benzinsku postaju",
+          "Planiranje pozicija za trgovačke centre",
+          "Proširenje i planiranje novih gospodarsko-servisnih zona",
+        ],
+      },
       "Donošenje prostornog plana za Paklinske otoke i osnivanje gradske ustanove za upravljanje Paklinskim otocima",
       "Uspostava jednosmjernih ulica radi smanjenja gužvi i dobivanja dodatnih parkirališnih mjesta",
-      "Značajno povećanje ulaganja u obnovu zastarjele i neodržavane gradske infrastrukture (Pjaca, ulice, ceste, parkinzi, kanalizacija i odvodnja)",
+      "Cjelovito rješenje pitanja javnog parkinga u gradu i svim prigradskim naseljima",
       "Izgradnja javnih WC-a i tuševa",
       "Tipizacijska prodajna mjesta za uslužne djelatnosti (izleti, iznajmljivanje brodova i dr.)",
       "Brusje – izgradnja sustava kanalizacije i odvodnje, asfaltiranje puteva",
@@ -54,18 +61,21 @@ const programData = [
       "Sv. Nedjelja, Jagodna i Bojanić Bad – poticanje završetka županijske ceste (tunel Dubovica – Sv. Nedjelja), kanalizacija i asfaltiranje",
       "Milna – izgradnja sustava odvodnje, uređenje mjesta",
       "Luku Vira organizirati prema potrebama hvarskih ribara i brodara",
-      "Efikasnije i ekonomičnije upravljanje gradskim prostorima",
+      "Efikasnije i ekonomičnije upravljanje gradskim prostorima (Fontik, zgrada katastara, Pčelica, kuća Ljubica Komforta, i dr.)",
     ],
   },
   {
     title: "3. VITALAN",
     subtitle: "… jer mora biti otporan na razne izazove",
     bullets: [
-      "Cijelogodišnja sportska infrastruktura za rekreativce svih dobnih skupina (planiranje i realizacija)",
-      "Javni bazen – zatvoren ili pod balonom",
-      "Atletska staza",
-      "Sportski centar (kuglana, sport bar, stolni tenis, biljar, pikado, padel i sl.)",
-      "Sportske radionice za djecu školskog i predškolskog uzrasta",
+      {
+        text: "Cjelogodišnja sportska infrastruktura za rekreativce svih dobnih skupina (planiranje i realizacija)",
+        subbullets: [
+          "Javni bazen – zatvoren ili pod balonom",
+          "Zabavno-sportski centar (kuglana, sport bar, stolni tenis, biljar, pikado, padel i sl.)",
+        ]
+      },
+      "Organiziranje sportskih radionica za djecu školskog i predškolskog uzrasta",
       "Biciklističko-pješačka staza od Pokonji dol do Milne",
       "Nova i sigurnija dječja igrališta",
     ],
@@ -76,7 +86,7 @@ const programData = [
     bullets: [
       "Cjelogodišnji turizam i zabava za sve dobne skupine, s naglaskom na kongresni, znanstveni, zdravstveni, kulturni i sportski turizam izvan sezone",
       "Dati na raspolaganje otvorene i zatvorene javne prostore za koncerte, predstave, ples, filmske večeri, kongrese",
-      "Poticaji i financijska podrška festivalima i kulturno-zabavnim manifestacijama regionalnog značaja",
+      "Poticati i financijski podržati festivale i kulturno-zabavne manifestacije regionalnog značaja",
       "Poticati i financijski podržati lokalne bendove, umjetnike, DJ-eve, kazališne skupine i druge",
       "Napraviti kalendar događanja za bolju organizaciju i promociju sadržaja u svrhu informiranja građana da i zimi imaju razloga doživjeti svoj grad",
     ],
@@ -88,9 +98,13 @@ const programData = [
       "Uređenje gradskih tvrđava (Španjola, Poljun, Baterija i Veneranda) i stavljanje istih u funkciju kulture i zabave",
       "Povijest pretočiti u sadašnjost prezentacijom osoba i događaja koji su doprinijeli prepoznatljivosti Hvara (grada i otoka) na trgovima, ulicama, zidovima i sl.",
       "Digitalno oživljavanje kulturno-povijesnih znamenitosti kroz implementaciju virtualnih sadržaja",
-      "Sadržajno oplemeniti grad: tematski i zabavni parkovi",
-      "Replike tradicijskih kuća i radionica, destilerije lavande i ružmarina, uljare s poljima lavande i maslinicima",
-      "Aktivnosti i atrakcije za obitelji – vožnje, igre i izleti",
+      {
+        text: "Sadržajno oplemeniti grad: tematski i zabavni parkovi",
+        subbullets: [
+        "Replike tradicijskih kuća i radionica, destilerije lavande i ružmarina, uljare s poljima lavande i maslinicima",
+        "Aktivnosti i atrakcije za obitelji – vožnje, igre i izleti"
+        ],
+      },
       "Osigurati pozicije za prodaju sezonskih proizvoda, animacijskih elemenata i obiteljski prigodnih proizvoda",
     ],
   },
@@ -107,6 +121,7 @@ const programData = [
     title: "7. POŽELJAN",
     subtitle: "… jer svi žele ići, biti i ostati tamo gdje su dobrodošli",
     bullets: [
+      "Postupanje prema svim fizičkim i pravnim subjektima jednako",
       "Afirmativan pristup poduzetništvu uz ukidanje svih nepotrebnih birokratskih ograničenja iz nadležnosti Grada",
       "Obvezne namete u nadležnosti Grada građanima smanjiti na minimum",
       "Promjena uvjeta za zakup javnih površina ugostiteljima radi osiguranja rada tijekom cijele godine",
@@ -115,7 +130,6 @@ const programData = [
       "Poticati vrhunsku izobrazbu za djelatnike u ugostiteljstvu i turizmu, omogućiti dostupne seminare i cjeloživotno obrazovanje građanima svih dobnih skupina",
       "Transparentan, ekonomičan i efikasan rad gradske uprave",
       "Osigurati prometnu povezanost prigradskih naselja s Gradom",
-      "Postupanje prema svim fizičkim i pravnim subjektima jednako",
     ],
   },
 ];
@@ -156,12 +170,12 @@ const Program = () => {
     >
       <div className="bg-blue bg-opacity-70 p-6 rounded-lg">
         <h2 className="text-3xl sm:text-4xl font-bold font-inter text-center mb-12 text-yellow-400">
-          FOR – I LITI, I ZIMI
+          FOR – I LITI, I ZIMI!
         </h2>
 
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {programData.map((section, index) => {
-            const isOpen = isMobile || openSections.includes(index); // Adjust this logic for mobile
+            const isOpen = isMobile || openSections.includes(index); 
             return (
               <div
                 key={index}
@@ -171,15 +185,17 @@ const Program = () => {
               >
                 <div
                   className="flex items-center justify-between cursor-pointer"
-                  onClick={() => !isMobile && toggleSection(index)} // Disable toggle on mobile
+                  onClick={() => !isMobile && toggleSection(index)} 
                 >
                   <div className="flex items-center gap-3 text-blue text-xl font-bold">
                     <span className="text-yellow text-2xl">{icons[index]}</span>
                     {section.title}
                   </div>
+                  {!isMobile && (
                   <div className="text-yellow-600 text-2xl">
                     {isOpen ? <FiChevronUp /> : <FiChevronDown />}
                   </div>
+                )}
                 </div>
                 <p className="italic text-sm text-yellow font-inter mb-2 mt-1">
                   {section.subtitle}
@@ -187,20 +203,33 @@ const Program = () => {
 
                 <div
                   className={`transition-all duration-500 overflow-hidden ${
-                    isOpen ? "max-h-[2000px] mt-3" : "max-h-0"
+                    isOpen ? "max-h-[2000px] mt-6" : "max-h-0"
                   }`}
                 >
                   <ul className="list-disc list-inside text-sm space-y-2 text-blue font-inter">
-                    {section.bullets.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
+                    {section.bullets.map((item, idx) => {
+                      if (typeof item === "string") {
+                        return <li key={idx}>{item}</li>;
+                      } else if (item.subbullets) {
+                        return (
+                          <li key={idx}>
+                            {item.text}
+                            <ul className="list-dashed pl-5 mt-1 space-y-1 text-blue">
+                              {item.subbullets.map((sub, subIdx) => (
+                                <li key={subIdx}>- {sub}</li> 
+                              ))}
+                            </ul>
+                          </li>
+                        );
+                      }
+                      return null;
+                    })}
                   </ul>
                 </div>
               </div>
             );
           })}
         </div>
-
         <p className="text-center text-yellow-300 font-bold font-inter mt-12 text-xl sm:text-2xl">
           ...jer BRAVURA JE ŽIVIT OD LAVURA
         </p>

@@ -19,7 +19,7 @@ const NavBar = () => {
     <nav className="relative flex justify-between items-center bg-blue text-yellow h-auto p-4 md:p-6 sticky top-0 z-50">
       <div className="flex items-center">
         <Link to="/">
-            <img src={logo} alt="Logo" className="h-16 w-auto" />
+        <img src={logo} alt="Logo" className="h-24 md:h-28 w-auto max-h-[70px] md:max-h-[112px]" />
         </Link>
         
       </div>
