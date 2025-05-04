@@ -8,7 +8,10 @@ const About = () => {
   return (
     <div
       className="relative w-full bg-cover bg-center text-white pt-32 pb-20 px-4 sm:px-6 lg:px-12 mb-auto"
-      style={{ backgroundImage: `url(${heroImage})` }}
+      style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundPosition: "center",
+      }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-65 z-0"></div>
 
@@ -42,7 +45,13 @@ const About = () => {
         </p>
 
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            if (window.innerWidth >= 768) {
+              window.open(lista, "_blank");
+            } else {
+              setIsOpen(true);
+            }
+          }}
           className="mt-6 px-6 py-3 bg-yellow text-white font-bold rounded shadow-lg hover:bg-blue transition-all duration-300"
         >
           NAŠA LISTA
