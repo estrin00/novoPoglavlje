@@ -33,7 +33,7 @@ const Contact = () => {
         </div>
 
         <p className="text-center text-yellow font-bold mt-6 text-xl">
-          Zajedno gradimo bolje sutra!
+          Glas svakoga od vas ima vrijednost!
         </p>
       </div>
     </div>

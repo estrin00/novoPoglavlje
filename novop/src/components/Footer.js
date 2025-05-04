@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="bg-blue text-yellow px-6 py-10 flex flex-col sm:flex-row justify-between items-center sm:items-start">
       
       <div className="w-full sm:w-1/3 mb-6 sm:mb-0 text-center sm:text-left">
-        <h3 className="font-inter text-yellow font-semibold ">FOR – I LITI, I ZIMI!</h3>
-        <p>VIJEĆE ODLUČUJE. </p>
+        <h3 className="font-inter text-white font-semibold ">FOR – I LITI, I ZIMI!</h3>
+        <p>VIJEĆE ODLUČUJE </p>
       </div>
 
       <div className="w-full sm:w-1/3 mb-6 sm:mb-0 text-center">

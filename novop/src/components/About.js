@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import heroImage from "../assets/hv.jpg";
-import lista from "../assets/lista.jpg"; 
+import lista from "../assets/lista.jpg";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className="relative w-full bg-cover bg-center text-white py-20 px-4 sm:px-6 lg:px-12 mb-auto"
+      className="relative w-full bg-cover bg-center text-white pt-32 pb-20 px-4 sm:px-6 lg:px-12 mb-auto"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-65 z-0"></div>
@@ -41,18 +41,16 @@ const About = () => {
           For – i liti, i zimi!
         </p>
 
-        
         <button
           onClick={() => setIsOpen(true)}
-          className="mt-6 px-6 py-3 bg-white text-black font-bold rounded-xl shadow-lg hover:bg-gray-200 transition"
+          className="mt-6 px-6 py-3 bg-yellow text-white font-bold rounded shadow-lg hover:bg-blue transition-all duration-300"
         >
           NAŠA LISTA
         </button>
 
-        
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999] mt-[80px]" 
+            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999]"
             onClick={() => setIsOpen(false)}
           >
             <div
@@ -67,7 +65,7 @@ const About = () => {
               <button
                 onClick={() => setIsOpen(false)}
                 className="absolute top-2 right-2 bg-yellow hover:bg-blue text-white text-xl font-bold rounded-full w-8 h-8 flex items-center justify-center transition"
-                title="lista"
+                title="Zatvori"
               >
                 ×
               </button>
