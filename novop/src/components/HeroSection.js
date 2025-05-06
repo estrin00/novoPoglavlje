@@ -23,6 +23,9 @@ const HeroSection = () => {
           ravnoteži, pravednosti i dugoročnoj održivosti Hvara kao mjesta za
           život.
         </p>
+        <p className="text-sm sm:text-base md:text-xl mb-6 max-w-[90%] sm:max-w-2xl drop-shadow" >
+        Pozivamo vas da podržite našu listu broj 6 i zajedno otvorimo novo poglavlje za bolji Hvar!
+        </p>
 
         <Link
         to="/program"

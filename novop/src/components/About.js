@@ -54,7 +54,7 @@ const About = () => {
           }}
           className="mt-6 px-6 py-3 bg-yellow text-white font-bold rounded shadow-lg hover:bg-blue transition-all duration-300"
         >
-          NAŠA LISTA
+          LISTA N°6
         </button>
 
         {isOpen && (
